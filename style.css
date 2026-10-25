@@ -195,12 +195,6 @@ a:hover { text-decoration-thickness: 2px; }
 .avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .pi .avatar { width: 96px; height: 96px; font-size: 2rem; }
 
-/* ---------- Updates ---------- */
-.updates { list-style: none; margin: 24px 0 0; padding: 0; display: flex; flex-direction: column; }
-.updates li { display: grid; grid-template-columns: 130px 1fr; gap: 20px; padding: 14px 0; border-top: 1px solid var(--line); }
-.updates li:first-child { border-top: 0; padding-top: 0; }
-.update-date { color: var(--muted); font-size: 0.92rem; font-variant-numeric: tabular-nums; }
-
 /* ---------- Footer ---------- */
 .footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: 0.92rem; }
 .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; }
@@ -217,7 +211,6 @@ a:hover { text-decoration-thickness: 2px; }
   .hero-actions { flex-wrap: nowrap; gap: 10px; align-items: stretch; }
   .hero-actions .btn { flex: 1 1 0; min-width: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 11px 10px; font-size: 0.9rem; }
   .pi { flex-direction: column; align-items: flex-start; }
-  .updates li { grid-template-columns: 1fr; gap: 2px; }
   .cards { grid-template-columns: 1fr; }
   .topbar nav { gap: 18px; }
   .topbar nav .more { display: none; }

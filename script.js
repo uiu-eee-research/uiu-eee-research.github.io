@@ -149,19 +149,6 @@
     ]));
   });
 
-  /* ---------- Updates ---------- */
-  var updBox = $("#update-list");
-  var updates = (D.updates || []).filter(visible);
-  if (!updates.length) {
-    updBox.appendChild(el("li", { class: "empty", text: "No updates yet." }));
-  }
-  updates.forEach(function (u) {
-    updBox.appendChild(el("li", {}, [
-      el("span", { class: "update-date", text: formatDate(u.date) }),
-      el("span", { text: u.text })
-    ]));
-  });
-
   /* ---------- Footer ---------- */
   $("#footer-contact").textContent = "Contact: " + pi.name + (pi.email ? ", " + pi.email : "");
   $("#footer-updated").textContent = "Last updated " + formatDate(D.lastUpdated);
