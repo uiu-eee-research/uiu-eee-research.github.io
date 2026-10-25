@@ -77,22 +77,11 @@
 
   /* ---------- Hero, brand, title ---------- */
   document.title = D.group.name + " | " + D.pi.university;
-  $("#brand").textContent = D.group.name;
   $("#hero-where").textContent = D.pi.department + ", " + D.pi.university;
   $("#hero-title").textContent = D.group.name;
   $("#hero-tagline").textContent = D.group.tagline || "";
-  // Optional lines/pictures in the hero. All are off by default.
+  // Optional line in the hero. Off by default.
   if (D.group.showWhere !== true) { $("#hero-where").hidden = true; }
-  var figure = $(".hero-figure");
-  if (D.group.heroImage) {
-    var photo = el("img", { src: "images/" + D.group.heroImage, alt: D.group.heroAlt || "", class: "hero-photo" });
-    figure.querySelector("svg").replaceWith(photo);
-    figure.querySelector("figcaption").textContent = D.group.heroCaption || "";
-    if (!D.group.heroCaption) { figure.querySelector("figcaption").hidden = true; }
-  } else if (D.group.showDiagram !== true) {
-    figure.hidden = true;
-    $(".hero-grid").classList.add("no-figure");
-  }
   if (D.group.interests && D.group.interests.length) {
     $("#hero-interests").textContent = "Research interests: " + D.group.interests.join(", ") + ".";
   }
