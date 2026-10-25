@@ -44,7 +44,7 @@ window.SITE = {
     department: "Department of Electrical and Electronic Engineering",
     university: "United International University",
     email: "iqbal@eee.uiu.ac.bd",
-    photo: ""                                  // e.g. "iqbal-bahar.jpg" (file inside the images folder)
+    photo: "ibcsir.jpg"                                  // e.g. "iqbal-bahar.jpg" (file inside the images folder)
   },
 
   // Group members (the supervisor is added automatically at the top).
