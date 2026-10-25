@@ -32,10 +32,6 @@
           <p class="hero-tagline" id="hero-tagline"></p>
           <p class="hero-interests" id="hero-interests"></p>
           <p class="hero-super" id="hero-super"></p>
-          <div class="hero-actions">
-            <a class="btn" href="#ongoing">Ongoing research</a>
-            <a class="btn" href="#published">Published papers</a>
-          </div>
         </div>
       </div>
     </section>
@@ -73,6 +69,14 @@
   </footer>
 
   <noscript><p class="wrap noscript">Please turn on JavaScript to see the research list.</p></noscript>
+  <script>
+    // If data.js has a mistake, remember where, so the page can point to it.
+    window.addEventListener("error", function (e) {
+      if (e.filename && /data\.js/.test(e.filename) && !window.__dataError) {
+        window.__dataError = { line: e.lineno, message: e.message };
+      }
+    });
+  </script>
   <script src="data.js"></script>
   <script src="script.js"></script>
 </body>
