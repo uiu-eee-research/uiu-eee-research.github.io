@@ -67,7 +67,14 @@ window.SITE = {
     //   authors: ["Md. Iqbal Bahar Chowdhury", "Member name", "Member name"],
     //   links: []
     // },
-
+{
+  type: "ongoing",
+  title: "A 1-V Ultra-Low-Power Recycling Current-Reuse OTA for Wearable Analog Front-End Applications",
+  status: "Writing",
+  description: "Low-voltage, low-power analog circuit design for wearable front-end applications.",
+  authors: ["Md. Iqbal Bahar Chowdhury", "Author name", "Author name"],
+  links: []
+},
     // ---------- Published ----------
     // Template - copy above this line and remove the //
     // {
