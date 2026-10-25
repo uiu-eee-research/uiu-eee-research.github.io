@@ -3,7 +3,25 @@
   "use strict";
 
   var D = window.SITE;
-  if (!D) { return; }
+  if (!D) {
+    // data.js has a mistake (for example a missing comma): say so instead of showing a blank page.
+    var main = document.getElementById("main");
+    if (main) {
+      var note = document.createElement("div");
+      note.className = "wrap";
+      note.style.padding = "48px 20px";
+      var title = document.createElement("h2");
+      title.textContent = "The page content could not be loaded";
+      var msg = document.createElement("p");
+      msg.className = "section-note";
+      msg.textContent = "There is probably a mistake in data.js, such as a missing comma, quote or bracket. Open data.js on GitHub, check the last edit, or use History to go back to the previous version.";
+      note.appendChild(title);
+      note.appendChild(msg);
+      main.textContent = "";
+      main.appendChild(note);
+    }
+    return;
+  }
 
   var $ = function (sel) { return document.querySelector(sel); };
 
