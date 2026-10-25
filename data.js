@@ -24,7 +24,7 @@ window.SITE = {
 
   group: {
     name: "Research Group",   // change when the group name is decided, e.g. "Semiconductor Devices Research Group"
-    tagline: "Ongoing and published research from the Department of Electrical and Electronic Engineering.",
+    tagline: "Ongoing and published research from the Department of Electrical and Electronic Engineering,UIU.",
     interests: [
       // "Topic one",
       // "Topic two"
