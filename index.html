@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research Group</title>
+  <meta name="description" content="Ongoing research and publications of the research group.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Spectral:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top" id="brand">Research Group</a>
+      <nav aria-label="Sections">
+        <a href="#ongoing">Ongoing research</a>
+        <a href="#published">Published papers</a>
+        <a href="#members">Members</a>
+        <a href="#updates">Updates</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="hero-where" id="hero-where"></p>
+          <h1 id="hero-title">Research Group</h1>
+          <p class="hero-tagline" id="hero-tagline"></p>
+          <p class="hero-interests" id="hero-interests"></p>
+          <p class="hero-super" id="hero-super"></p>
+          <div class="hero-actions">
+            <a class="btn" href="#ongoing">See ongoing research</a>
+            <a class="btn" href="#published">Published papers</a>
+          </div>
+        </div>
+
+        <figure class="hero-figure">
+          <svg viewBox="0 0 480 330" role="img" aria-labelledby="bd-title bd-desc">
+            <title id="bd-title">Energy band diagram of a quantum well</title>
+            <desc id="bd-desc">A narrow InGaN well between GaN barriers. A photon lifts an electron from the valence band level to the conduction band level inside the well, leaving a hole behind.</desc>
+
+            <rect class="bd-well" x="150" y="150" width="150" height="90"/>
+
+            <path class="bd-band" d="M20 90 H150 V150 H300 V90 H460"/>
+            <path class="bd-band" d="M20 280 H150 V240 H300 V280 H460"/>
+
+            <line class="bd-level" x1="162" y1="172" x2="288" y2="172"/>
+            <line class="bd-level" x1="162" y1="218" x2="288" y2="218"/>
+
+            <g class="bd-photon">
+              <path d="M200 40 q-8 10 0 20 t0 20 t0 20 t0 20 t0 20"/>
+              <path d="M193 192 L200 204 L207 192"/>
+            </g>
+
+            <circle class="bd-hole" cx="225" cy="218" r="7"/>
+            <circle class="bd-electron" cx="225" cy="218" r="7"/>
+
+            <text class="bd-label" x="20" y="76">Conduction band</text>
+            <text class="bd-label" x="20" y="305">Valence band</text>
+            <text class="bd-label bd-mid" x="75" y="190">GaN</text>
+            <text class="bd-label bd-mid" x="380" y="190">GaN</text>
+            <text class="bd-label bd-mid bd-strong" x="225" y="268">InGaN well</text>
+          </svg>
+          <figcaption>An electron jumps across the gap inside a quantum well, the basic step behind a solar cell.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="ongoing" aria-labelledby="h-ongoing">
+      <div class="wrap">
+        <h2 id="h-ongoing">Ongoing research</h2>
+        <p class="section-note">Work in progress. Details are kept brief until publication.</p>
+        <div class="cards" id="ongoing-list"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="published" aria-labelledby="h-published">
+      <div class="wrap">
+        <h2 id="h-published">Published papers</h2>
+        <p class="section-note">Earlier publications from the group.</p>
+        <div id="published-list"></div>
+      </div>
+    </section>
+
+    <section class="section" id="members" aria-labelledby="h-members">
+      <div class="wrap">
+        <h2 id="h-members">Members</h2>
+        <div id="pi-card"></div>
+        <ul class="people" id="member-list"></ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="updates" aria-labelledby="h-updates">
+      <div class="wrap">
+        <h2 id="h-updates">Updates</h2>
+        <ul class="updates" id="update-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p id="footer-contact"></p>
+      <p id="footer-updated"></p>
+    </div>
+  </footer>
+
+  <noscript><p class="wrap noscript">Please turn on JavaScript to see the research list.</p></noscript>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
